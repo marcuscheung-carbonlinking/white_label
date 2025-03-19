@@ -4,22 +4,18 @@ workflows:
     instance_type: mac_mini_m2
     environment:
       flutter: 3.29.1
+      groups:
+        - dev
     scripts:
-      - name: Change package name
-        script: |
-          flutter pub add rename
-          dart pub global activate rename
-          rename setBundleId --targets web --value $WEB_PACKAGE_NAME
-
       - name: Change Web app name
         script: rename setAppName --targets web --value $APP_NAME
 
-      - name: Download and unzip assets
-        script: |
-          echo "Downloading assets from $WEB_ASSETS_URL"
-          curl -O $ASSETS_URL || echo "Failed to download assets"
-          echo "Unzipping assets.zip"
-          unzip -o assets.zip || echo "Failed to unzip assets.zip"
+      # - name: Download and unzip assets
+      #   script: |
+      #     echo "Downloading assets from $WEB_ASSETS_URL"
+      #     curl -O $ASSETS_URL || echo "Failed to download assets"
+      #     echo "Unzipping assets.zip"
+      #     unzip -o assets.zip || echo "Failed to unzip assets.zip"
 
       - name: Download and unzip Web App Icon
         script: |
