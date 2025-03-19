@@ -8,7 +8,10 @@ workflows:
         - dev
     scripts:
       - name: Change Web app name
-        script: rename setAppName --targets web --value $APP_NAME
+        script: |
+          flutter pub add rename
+          dart pub global activate rename
+          rename setAppName --targets web --value $APP_NAME
 
       # - name: Download and unzip assets
       #   script: |
