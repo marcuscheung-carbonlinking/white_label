@@ -1,15 +1,11 @@
 # white_label
 explore white label flutter app
 
-## Getting Started
+## White labeling overview
+A white labeling pipeline will run scripts to change colours, logos, images, fonts and update other app settings such as bundle identifiers, provisioning profiles, certificates, API endpoints, and other configuration settings unique to each customer.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Getting Started With CogeMagic
+[Build and publish white-label apps with Codemagic](https://codemagic.io/white-label-app-ci-cd/)
+[Codemagic White-label in Flutter - Medium](https://medium.com/@mehranshoghii/codemagic-white-label-in-flutter-15f5a66f9409)
+[White Label Apps](https://docs.codemagic.io/knowledge-white-label/white-label-apps-overview/)
+[White Label Apps .yaml](https://docs.codemagic.io/yaml-quick-start/white-label-getting-started/)
